@@ -630,7 +630,7 @@ var postOnce = false;
                     var actualDistance =
                         this.distanceMeter.getActualDistance(Math.ceil(this.distanceRan));
                         getDistance = actualDistance;
-                        if(actualDistance<300){
+                        if(actualDistance < 500){
                            this.horizon.update(deltaTime, this.currentSpeed, hasObstacles,
                         this.inverted);
                         }
@@ -663,7 +663,7 @@ var postOnce = false;
                 var playAchievementSound = this.distanceMeter.update(deltaTime,
                     Math.ceil(this.distanceRan));
                 var isachieve = this.distanceMeter.getActualDistance(Math.ceil(this.distanceRan));
-                if (playAchievementSound && isachieve < 300) {
+                if (playAchievementSound && isachieve < 500) {
                     this.playSound(this.soundFx.SCORE);
                 }
 
