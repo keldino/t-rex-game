@@ -73,7 +73,7 @@ var postOnce = false;
       function showMessage(){
         var myMusic= document.getElementById("background-sound");
         myMusic.play();
-        document.getElementById("message-container").style.display = "block";
+        // document.getElementById("message-container").style.display = "block";
 
         var myVar = setInterval(function() {
             
